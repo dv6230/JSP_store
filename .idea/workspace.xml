@@ -10,16 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3139b75-f47d-479f-aabf-9d906cb736ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/RegistServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/RegistServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/RegistServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/RegistServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/UserServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.18045977" />
     <property name="project.structure.side.proportion" value="0.22923078" />
   </component>
@@ -81,7 +76,14 @@
       <recent name="com.example.util" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
+    <configuration name="UserServletTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserServletTest" />
+      <module name="JSP_store" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -180,6 +182,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.50" />
+      <item itemvalue="Application.UserServletTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UserServletTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -200,7 +211,7 @@
       <workItem from="1633590370446" duration="295000" />
       <workItem from="1633590981042" duration="7417000" />
       <workItem from="1633948265788" duration="2431000" />
-      <workItem from="1634009323253" duration="3649000" />
+      <workItem from="1634009323253" duration="6860000" />
     </task>
     <servers />
   </component>

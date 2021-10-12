@@ -8,6 +8,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 @WebServlet(name = "UserServlet", value = "/UserServlet")
 public class UserServlet extends HttpServlet {
@@ -63,10 +64,14 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
-        if (action.equals("login")) {
-            login(req, resp);
-        } else if (action.equals("register")) {
-            register(req, resp);
+        System.out.println(action);
+        try {
+            Method method = this.getClass().getDeclaredMethod(action,HttpServletRequest.class,HttpServletResponse.class);
+            method.invoke(this,req,resp);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+
     }
 }
