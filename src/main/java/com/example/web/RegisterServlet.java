@@ -1,9 +1,5 @@
 package com.example.web;
 
-import com.example.pojo.User;
-import com.example.service.imp.UserServiceImp;
-import com.example.service.UserService;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +10,7 @@ import java.io.IOException;
 @WebServlet(name = "registerServlet", value = "/registerServlet")
 public class RegisterServlet extends HttpServlet {
 
-    private UserService userService = userService = new UserServiceImp();
+    private com.example.service.UserService userService = new com.example.service.imp.UserServiceImp();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -44,7 +40,7 @@ public class RegisterServlet extends HttpServlet {
             req.setAttribute("username", username);
             req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
         } else {
-            userService.RegisterUser(new User(null, username, password, email));
+            userService.RegisterUser(new com.example.pojo.User(null, username, password, email));
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         }
 

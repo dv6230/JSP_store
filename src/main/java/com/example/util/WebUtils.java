@@ -4,12 +4,13 @@ import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
 
 public class WebUtils {
 
-    public static void CopyParamToBean(HttpServletRequest request, Object bean) {
+    public static void CopyParamToBean(Map value, Object bean) {
         try {
-            BeanUtils.populate(bean, request.getParameterMap());
+            BeanUtils.populate(bean, value);
         } catch (Exception e) {
             e.printStackTrace();
         }

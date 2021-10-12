@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3139b75-f47d-479f-aabf-9d906cb736ea" name="Default Changelist" comment="" />
+    <list default="true" id="d3139b75-f47d-479f-aabf-9d906cb736ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,17 +79,6 @@
     <configuration name="UserServletTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UserServletTest" />
       <module name="JSP_store" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,7 +199,10 @@
       <workItem from="1633590370446" duration="295000" />
       <workItem from="1633590981042" duration="7417000" />
       <workItem from="1633948265788" duration="2431000" />
-      <workItem from="1634009323253" duration="8311000" />
+      <workItem from="1634009323253" duration="8622000" />
+      <workItem from="1634024963152" duration="311000" />
+      <workItem from="1634025294506" duration="556000" />
+      <workItem from="1634025873138" duration="40000" />
     </task>
     <servers />
   </component>
@@ -222,5 +219,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

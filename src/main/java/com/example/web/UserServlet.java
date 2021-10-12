@@ -3,16 +3,15 @@ package com.example.web;
 import com.example.pojo.User;
 import com.example.service.UserService;
 import com.example.service.imp.UserServiceImp;
-import org.apache.commons.beanutils.BeanUtils;
+import com.example.util.WebUtils;
 
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.lang.reflect.Method;
-
-import static com.example.util.WebUtils.CopyParamToBean;
 
 
 @WebServlet(name = "UserServlet", value = "/UserServlet")
@@ -47,12 +46,14 @@ public class UserServlet extends HttpServlet {
         }
 
         User user = new User();
-        CopyParamToBean(req, user);
+        WebUtils.CopyParamToBean(req.getParameterMap(), user);
 
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
-        String email = req.getParameter("email");
-        String code = req.getParameter("code") == null ? "abcd" : req.getParameter("code");
+        req.getParameterMap();
+
+        String username = user.getUsername();
+        String password = user.getPassword();
+        String email = user.getEmail();
+        String code = "abcd";
 
         if (!code.equalsIgnoreCase("abcd")) {
             System.out.println("驗證碼錯誤: " + code);
