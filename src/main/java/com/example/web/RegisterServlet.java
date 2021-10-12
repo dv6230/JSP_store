@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "registServlet", value = "/registerServlet")
-public class RegistServlet extends HttpServlet {
+@WebServlet(name = "registerServlet", value = "/registerServlet")
+public class RegisterServlet extends HttpServlet {
 
     private UserService userService = userService = new UserServiceImp();
 
