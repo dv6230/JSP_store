@@ -26,7 +26,7 @@ public class RegistServlet extends HttpServlet {
 
         if (req.getParameter("username") == null || req.getParameter("password") == null || req.getParameter("email") == null) {
             System.out.println("參數不可為NULL");
-            req.getRequestDispatcher("/pages/user/regist.jsp").forward(req, resp);
+            req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
         }
 
         String username = req.getParameter("username");
@@ -34,14 +34,14 @@ public class RegistServlet extends HttpServlet {
         String email = req.getParameter("email");
         String code = req.getParameter("code") == null ? "abcd" : req.getParameter("code");
 
-        if (code.equalsIgnoreCase("abcd") == false) {
+        if (!code.equalsIgnoreCase("abcd")) {
             System.out.println("驗證碼錯誤: " + code);
             req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
-        } else if (userService.ExistUsername(username) == true) {
+        } else if (userService.ExistUsername(username)) {
             System.out.println("用戶名已存在: " + username);
-            req.setAttribute("msg","用戶名稱已被使用");
-            req.setAttribute("email",email);
-            req.setAttribute("username",username);
+            req.setAttribute("msg", "用戶名稱已被使用");
+            req.setAttribute("email", email);
+            req.setAttribute("username", username);
             req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
         } else {
             userService.RegisterUser(new User(null, username, password, email));

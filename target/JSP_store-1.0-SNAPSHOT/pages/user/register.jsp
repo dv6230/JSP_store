@@ -26,7 +26,11 @@
     <div class="col-md-6 col-sm-12">
         <h2 style="margin-top: 15px; margin-bottom: 15px; padding: 0px;">註冊</h2>
         <div class="login-form d-flex align-items-center col-8" style="margin-top: 50px;">
-            <form method="POST" action="registerServlet">
+            <form method="POST" action="UserServlet">
+                <small class="ml-auto <%=request.getAttribute("msg") != null ? "text-danger" : "text-dark" %>">
+                    <%=request.getAttribute("msg") != null ? request.getAttribute("msg") : "請輸入帳號密碼"%>
+                </small>
+                <input type="hidden" name="action" value="register">
                 <div class="form-group mb-3">
                     <label for="username">帳號名稱</label>
                     <input type="text" class="form-control" id="username" name="username"
