@@ -3,12 +3,17 @@ package com.example.web;
 import com.example.pojo.User;
 import com.example.service.UserService;
 import com.example.service.imp.UserServiceImp;
+import org.apache.commons.beanutils.BeanUtils;
+
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.lang.reflect.Method;
+
+import static com.example.util.WebUtils.CopyParamToBean;
+
 
 @WebServlet(name = "UserServlet", value = "/UserServlet")
 public class UserServlet extends HttpServlet {
@@ -41,6 +46,9 @@ public class UserServlet extends HttpServlet {
             req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
         }
 
+        User user = new User();
+        CopyParamToBean(req, user);
+
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String email = req.getParameter("email");
@@ -64,10 +72,9 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
-        System.out.println(action);
         try {
-            Method method = this.getClass().getDeclaredMethod(action,HttpServletRequest.class,HttpServletResponse.class);
-            method.invoke(this,req,resp);
+            Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
+            method.invoke(this, req, resp);
         } catch (Exception e) {
             e.printStackTrace();
         }

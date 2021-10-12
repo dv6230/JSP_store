@@ -15,6 +15,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="commons-dbutils-1.7" />
+          <element id="library" level="project" name="commons-beanutils-1.8.0" />
+          <element id="library" level="project" name="commons-logging-1.1.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
