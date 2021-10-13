@@ -9,11 +9,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3139b75-f47d-479f-aabf-9d906cb736ea" name="Default Changelist" comment="">
+    <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/common/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/common/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/common/login_menu_success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/common/manager_menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/common/order_manager.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/manager.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/order_manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_store_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_store_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_dbutils_1_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_dbutils_1_71.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSP_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP_store.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/RegisterServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/util/WebUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/util/WebUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/util/WebUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/util/WebUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/RegistServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/UserServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,7 +66,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="1z8HxGLFg3AL3UcuO5x5InUWr86" />
+  <component name="ProjectId" id="1zOjhytBQ293Kk4civAlzUh6Pf1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,10 +74,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,41 +84,30 @@
     <property name="project.structure.proportion" value="0.18045977" />
     <property name="project.structure.side.proportion" value="0.22923078" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\JSP_store\lib" />
-      <recent name="D:\Java\JSP_store\src\main\webapp\static\img" />
-      <recent name="D:\Java\JSP_store\src\main\java\com\example\web" />
-      <recent name="D:\Java\JSP_store\src\main\webapp\pages" />
-      <recent name="D:\Java\JSP_store\src\main\java\com\example\service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\JSP_store" />
-      <recent name="D:\Java\JSP_store\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.util" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
-    <configuration name="UserServletTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UserServletTest" />
-      <module name="JSP_store" />
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.50" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JSP_store/pages/user/login.jsp" />
+    <configuration name="Tomcat 9.0.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.50" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JSP_store_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="JSP_store:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/JSP_store" />
+            <option name="CONTEXT_PATH" value="/JSP_store_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="757726d6-c6a5-4b64-9930-33e419453c88" />
+        <option name="BASE_DIRECTORY_NAME" value="c19a8f24-1ec0-4159-ab29-bb8f8bf5e486" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -101,7 +115,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="49411" />
+        <option name="DEBUG_PORT" value="64322" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -170,39 +184,19 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.UserServletTest" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.50" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.UserServletTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d3139b75-f47d-479f-aabf-9d906cb736ea" name="Default Changelist" comment="" />
-      <created>1633523040900</created>
+      <changelist id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="" />
+      <created>1634026155169</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633523040900</updated>
-      <workItem from="1633523042106" duration="66000" />
-      <workItem from="1633523137894" duration="990000" />
-      <workItem from="1633524141104" duration="92000" />
-      <workItem from="1633524239235" duration="1740000" />
-      <workItem from="1633526731834" duration="508000" />
-      <workItem from="1633578484198" duration="3164000" />
-      <workItem from="1633581702031" duration="196000" />
-      <workItem from="1633588051913" duration="2281000" />
-      <workItem from="1633590370446" duration="295000" />
-      <workItem from="1633590981042" duration="7417000" />
-      <workItem from="1633948265788" duration="2431000" />
-      <workItem from="1634009323253" duration="8622000" />
-      <workItem from="1634024963152" duration="311000" />
-      <workItem from="1634025294506" duration="556000" />
-      <workItem from="1634025873138" duration="40000" />
+      <updated>1634026155169</updated>
+      <workItem from="1634026158838" duration="381000" />
+      <workItem from="1634026598241" duration="1625000" />
+      <workItem from="1634098875617" duration="17000" />
+      <workItem from="1634099032250" duration="356000" />
     </task>
     <servers />
   </component>

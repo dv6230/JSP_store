@@ -45,10 +45,7 @@ public class UserServlet extends HttpServlet {
             req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
         }
 
-        User user = new User();
-        WebUtils.CopyParamToBean(req.getParameterMap(), user);
-
-        req.getParameterMap();
+        User user = (User) WebUtils.CopyParamToBean(req.getParameterMap(),new User());
 
         String username = user.getUsername();
         String password = user.getPassword();
@@ -79,7 +76,5 @@ public class UserServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }

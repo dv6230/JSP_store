@@ -8,12 +8,13 @@ import java.util.Map;
 
 public class WebUtils {
 
-    public static void CopyParamToBean(Map value, Object bean) {
+    public static <T> T CopyParamToBean(Map value, T bean) {
         try {
             BeanUtils.populate(bean, value);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return bean;
     }
 
 

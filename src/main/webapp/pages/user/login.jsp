@@ -30,7 +30,7 @@
         <div class="login-form d-flex align-items-center col-8" style="margin-top: 50px;">
             <form class="" method="POST" action="UserServlet">
                 <small class="ml-auto <%=request.getAttribute("msg") != null ? "text-danger" : "text-dark" %>">
-                    <%=request.getAttribute("msg") != null ? request.getAttribute("msg") : "請輸入帳號密碼"%>
+                    ${ empty requestScope.msg ? "請輸入照號密碼": requestScope.msg }
                 </small>
                 <input type="hidden" name="action" value="login">
                 <div class="form-group mb-3">
