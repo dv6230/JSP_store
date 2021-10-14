@@ -14,7 +14,7 @@
           <element id="module-output" name="JSP_store" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="commons-beanutils-1.8.0" />
+          <element id="library" level="project" name="lib" />
         </element>
       </element>
       <element id="directory" name="META-INF">

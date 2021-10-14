@@ -19,6 +19,13 @@ public class testUser {
     }
 
     @Test
+    void TestUserByName(){
+        UserDaoImp userDaoImp = new UserDaoImp();
+        Object obj = userDaoImp.queryUserByUserName("kilito");
+        System.out.println(obj);
+    }
+
+    @Test
     void testEmpty(){
         String st = null;
         System.out.print(st==null);
