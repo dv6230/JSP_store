@@ -10,37 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/ProductDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JSP_store_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JSP_store_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/imp/ProductServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProductServiceImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSP_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP_store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-beanutils-1.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-dbutils-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-fileupload-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-io-2.11.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/druid-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.40.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/taglibs-standard-impl-1.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/taglibs-standard-spec-1.2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testUser.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +26,7 @@
         <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -85,6 +59,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -95,11 +71,17 @@
     <property name="project.structure.side.proportion" value="0.22923078" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductDaoTest.queryBookById">
+  <component name="RunManager" selected="JUnit.ProductServiceImpTest.queryProduct">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -113,17 +95,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductDaoTest.queryBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceImpTest.addProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSP_store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductDaoTest" />
-      <option name="METHOD_NAME" value="queryBookById" />
+      <option name="MAIN_CLASS_NAME" value="ProductServiceImpTest" />
+      <option name="METHOD_NAME" value="addProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImpTest.deleteProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductServiceImpTest" />
+      <option name="METHOD_NAME" value="deleteProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImpTest.queryProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductServiceImpTest" />
+      <option name="METHOD_NAME" value="queryProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImpTest.queryProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductServiceImpTest" />
+      <option name="METHOD_NAME" value="queryProductById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImpTest.updateProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductServiceImpTest" />
+      <option name="METHOD_NAME" value="updateProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -218,12 +234,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ProductDaoTest.queryBookById" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.50" />
+      <item itemvalue="JUnit.ProductServiceImpTest.queryProductById" />
+      <item itemvalue="JUnit.ProductServiceImpTest.queryProduct" />
+      <item itemvalue="JUnit.ProductServiceImpTest.updateProduct" />
+      <item itemvalue="JUnit.ProductServiceImpTest.addProduct" />
+      <item itemvalue="JUnit.ProductServiceImpTest.deleteProduct" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductDaoTest.queryBookById" />
+        <item itemvalue="JUnit.ProductServiceImpTest.queryProduct" />
+        <item itemvalue="JUnit.ProductServiceImpTest.deleteProduct" />
+        <item itemvalue="JUnit.ProductServiceImpTest.updateProduct" />
+        <item itemvalue="JUnit.ProductServiceImpTest.queryProductById" />
+        <item itemvalue="JUnit.ProductServiceImpTest.addProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +268,7 @@
       <workItem from="1634113831439" duration="1762000" />
       <workItem from="1634115633020" duration="72000" />
       <workItem from="1634115723022" duration="1071000" />
-      <workItem from="1634193977688" duration="692000" />
+      <workItem from="1634193977688" duration="1748000" />
     </task>
     <servers />
   </component>
