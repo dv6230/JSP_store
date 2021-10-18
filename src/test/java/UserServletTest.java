@@ -24,7 +24,6 @@ public class UserServletTest {
         String action = "register";
         try {
             Method method = UserServletTest.class.getDeclaredMethod(action);
-            System.out.println(method);
             method.invoke(new UserServletTest());
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
             e.printStackTrace();

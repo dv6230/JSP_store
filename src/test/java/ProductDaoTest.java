@@ -11,13 +11,11 @@ public class ProductDaoTest {
     @Test
     public void addProduct() {
         Object obj = PD.addProduct(product);
-        System.out.println(obj);
     }
 
     @Test
     public void deleteProduct() {
         Object obj = PD.deleteProduct(10);
-        System.out.println(obj);
     }
 
     @Test

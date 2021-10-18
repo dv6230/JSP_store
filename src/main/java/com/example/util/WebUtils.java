@@ -17,5 +17,14 @@ public class WebUtils {
         return bean;
     }
 
+    public static int parserInt(String number,int default_value){
+        try{
+            return Integer.parseInt(number);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return default_value;
+    }
+
 
 }
