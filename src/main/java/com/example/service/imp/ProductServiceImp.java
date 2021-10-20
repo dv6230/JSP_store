@@ -2,6 +2,7 @@ package com.example.service.imp;
 
 import com.example.dao.ProductDao;
 import com.example.dao.imp.ProductDaoImp;
+import com.example.pojo.Page;
 import com.example.pojo.Product;
 import com.example.service.ProductService;
 
@@ -36,8 +37,25 @@ public class ProductServiceImp implements ProductService {
         return productDao.queryProducts();
     }
 
-    public List<Product> page(int pageNo,int pageSize){
-        return null;
+    @Override
+    public Page<Product> page(int pageNo, int pageSize) {
+        Page<Product> page = new Page<Product>();
+        page.setPageNo(pageNo);
+        page.setPageSize(pageSize);
+        //總共有少筆資料
+        Integer pageTotalCount = productDao.queryForPageTotalCount();
+        page.setDataTotalCount(pageTotalCount);
+        Integer pageTotal = pageTotalCount / pageSize;
+        if (pageTotalCount % pageSize > 0) {
+            pageTotal += 1;
+        }
+        //設定總共有幾頁
+        page.setPageCount(pageTotal);
+        int begin = (page.getPageNo() - 1) * pageSize;
+        List<Product> items = productDao.queryForItem(begin, pageSize);
+        page.setItems(items);
+        return page;
     }
+
 
 }

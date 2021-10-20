@@ -25,20 +25,20 @@ public class ProductServlet extends BaseServlet {
         Product product = WebUtils.CopyParamToBean(request.getParameterMap(), new Product());
         productService.addProduct(product);
 //        request.getRequestDispatcher("/manage/productServlet?action=list").forward(request,response);
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=list");
+        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page");
     }
 
     void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String request_id = request.getParameter("id").toString();
         int id = parserInt(request.getParameter("id").toString(), 0);
         productService.deleteProduct(id);
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=list");
+        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page");
     }
 
     void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Product product = WebUtils.CopyParamToBean(request.getParameterMap(), new Product());
         productService.updateProduct(product);
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=list");
+        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page");
     }
 
     void query(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -65,6 +65,9 @@ public class ProductServlet extends BaseServlet {
     void page(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int pageNo = WebUtils.parserInt(request.getParameter("pageNo"),1);
         int pageSize = WebUtils.parserInt(request.getParameter("pageSize"), Page.PAGE_SIZE);
+        Page<Product> productPage = productService.page(pageNo,pageSize);
+        request.setAttribute("page",productPage);
+        request.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(request,response);
     }
 
 }

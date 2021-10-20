@@ -34,7 +34,7 @@ public class ProductDaoImp extends BaseDao implements ProductDao {
 
     @Override
     public Product queryProductById(int id) {
-        String sql = "SELECT `id`,`name`,`price`,`note`,`sales`,`stock` FROM `t_product` WHERE `id` = ? ";
+        String sql = "SELECT `id`,`name`,`price`,`note`,`sales`,`stock`,`image_path` imgPath FROM `t_product` WHERE `id` = ? ";
         return QueryForOne(Product.class, sql, id);
     }
 
@@ -42,5 +42,18 @@ public class ProductDaoImp extends BaseDao implements ProductDao {
     public List<Product> queryProducts() {
         String sql = "SELECT `id`,`name`,`price`,`note`,`sales`,`stock`,`image_path` imgPath FROM `t_product` WHERE 1=1 ";
         return QueryForList(Product.class, sql);
+    }
+
+    @Override
+    public Integer queryForPageTotalCount() {
+        String sql = "SELECT COUNT(id) FROM `t_product` ";
+        Number n = (Number) QueryForSingleValue(sql);
+        return n.intValue();
+    }
+
+    @Override
+    public List<Product> queryForItem(int begin, int pageSize) {
+        String sql = "SELECT `id`,`name`,`price`,`note`,`sales`,`stock`,`image_path` imgPath FROM `t_product` WHERE 1=1 LIMIT ?,?";
+        return QueryForList(Product.class, sql, begin, pageSize);
     }
 }

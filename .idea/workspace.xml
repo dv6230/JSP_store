@@ -10,16 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/ProductDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/ProductDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pojo/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/imp/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/imp/ProductServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductServiceImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/imp/ProductDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/imp/ProductDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/imp/ProductServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/imp/ProductServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -89,15 +98,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -215,6 +222,7 @@
       <workItem from="1634548975616" duration="2145000" />
       <workItem from="1634624086135" duration="2650000" />
       <workItem from="1634628279229" duration="5182000" />
+      <workItem from="1634698250776" duration="6871000" />
     </task>
     <servers />
   </component>

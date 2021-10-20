@@ -18,6 +18,9 @@ public class WebUtils {
     }
 
     public static int parserInt(String number,int default_value){
+        if (number == null){
+            return default_value;
+        }
         try{
             return Integer.parseInt(number);
         }catch (Exception e){

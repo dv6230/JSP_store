@@ -5,9 +5,11 @@ import java.util.List;
 public class Page<T> {
     public static final Integer PAGE_SIZE = 4;
     private Integer pageNo;
-    private Integer pageTotal;
+    //總共有幾頁
+    private Integer dataTotalCount;
     private Integer pageSize = PAGE_SIZE;
-    private Integer pageTotalCount;
+    //紀錄總共有幾筆資料
+    private Integer pageCount;
     // 目前頁面儲存數據
     private List<T> items;
 
@@ -18,9 +20,9 @@ public class Page<T> {
     public String toString() {
         return "Page{" +
                 "pageNo=" + pageNo +
-                ", pageTotal=" + pageTotal +
+                ", dataTotalCount=" + dataTotalCount +
                 ", pageSize=" + pageSize +
-                ", pageTotalCount=" + pageTotalCount +
+                ", pageCount=" + pageCount +
                 ", items=" + items +
                 '}';
     }
@@ -33,12 +35,12 @@ public class Page<T> {
         this.pageSize = pageSize;
     }
 
-    public Integer getPageTotalCount() {
-        return pageTotalCount;
+    public Integer getPageCount() {
+        return pageCount;
     }
 
-    public void setPageTotalCount(Integer pageTotalCount) {
-        this.pageTotalCount = pageTotalCount;
+    public void setPageCount(Integer pageCount) {
+        this.pageCount = pageCount;
     }
 
     public Integer getPageNo() {
@@ -49,12 +51,12 @@ public class Page<T> {
         this.pageNo = pageNo;
     }
 
-    public Integer getPageTotal() {
-        return pageTotal;
+    public Integer getDataTotalCount() {
+        return dataTotalCount;
     }
 
-    public void setPageTotal(Integer pageTotal) {
-        this.pageTotal = pageTotal;
+    public void setDataTotalCount(Integer dataTotalCount) {
+        this.dataTotalCount = dataTotalCount;
     }
 
     public List<T> getItems() {

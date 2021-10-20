@@ -1,5 +1,6 @@
 <%@ page import="com.example.pojo.Product" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.example.pojo.Page" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
@@ -45,7 +46,7 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach items="${requestScope.products}" var="item">
+        <c:forEach items="${requestScope.page.items}" var="item">
             <tr>
                 <td>${item.name}</td>
                 <td>$${item.price}</td>
@@ -53,7 +54,8 @@
                 <td>${item.sales}</td>
                 <td>${item.stock}</td>
                 <td class="">
-                    <a class="btn btn-primary d-inline" href="<%=path%>manage/productServlet?action=getProduct&id=${item.id}&method=update">修改</a>
+                    <a class="btn btn-primary d-inline"
+                       href="<%=path%>manage/productServlet?action=getProduct&id=${item.id}&method=update">修改</a>
                     <a class="btn btn-primary d-inline deleteClass"
                        href="<%=path%>manage/productServlet?action=delete&id=${item.id}">刪除</a>
                 </td>
@@ -61,14 +63,47 @@
         </c:forEach>
         </tbody>
     </table>
+
+    <nav aria-label="Page navigation example border border-primary">
+        <ul class="pagination justify-content-center">
+            <c:if test="${requestScope.page.pageNo > 1}">
+                <li class="page-item"><a class="page-link" href="?action=page&pageNo=1">首頁</a></li>
+                <li class="page-item" ${requestScope.page.pageNo-1 > 0 ? "" :"hidden"} >
+                    <a class="page-link"
+                       href="?action=page&pageNo=${requestScope.page.pageNo-1}">${requestScope.page.pageNo-1 > 0 ? requestScope.page.pageNo-1 :""}</a>
+                </li>
+            </c:if>
+            <li class="page-item active"><a class="page-link" href="#">${requestScope.page.pageNo}</a></li>
+            <c:if test="${requestScope.page.pageNo < requestScope.page.pageCount }">
+                <li class="page-item"  ${requestScope.page.pageNo+1 <= requestScope.page.pageCount ? "" :"hidden"}>
+                    <a class="page-link"
+                       href="?action=page&pageNo=${requestScope.page.pageNo+1}"> ${requestScope.page.pageNo+1 <= requestScope.page.pageCount ? requestScope.page.pageNo+1 :""}</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="?action=page&pageNo=${requestScope.page.pageCount}">末頁</a>
+                </li>
+            </c:if>
+            <small class="align-self-center">
+                總共${requestScope.page.pageCount}頁
+                總共${requestScope.page.dataTotalCount}筆資料
+            </small>
+        </ul>
+    </nav>
+    <button id="btntest">Continue</button>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 <script type="text/javascript">
+    $(function (){
+        $("#btntest").click(function (){
+            window.location.href = 'index.jsp'
+        })
+    })
+
     $(function () {
         $("a.deleteClass").click(function () {
-            console.log("test hello")
             var str = $(this).parent().parent().find("td:first").text();
             return confirm("確定刪除" + str + "?");
         });

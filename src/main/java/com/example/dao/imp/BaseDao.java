@@ -52,11 +52,10 @@ public abstract class BaseDao {
     public Object QueryForSingleValue(String sql, Object... args) {
         Connection connection = JDBCUtils.getConnection();
         try {
-            queryRunner.query(connection, sql, new ScalarHandler<>(), args);
+            return queryRunner.query(connection, sql, new ScalarHandler<>(), args);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return null;
     }
 

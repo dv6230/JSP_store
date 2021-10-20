@@ -14,4 +14,8 @@ public interface ProductDao {
     public Product queryProductById(int id);
 
     public List<Product> queryProducts();
+
+    public Integer queryForPageTotalCount();
+
+    List<Product> queryForItem(int begin, int pageSize);
 }

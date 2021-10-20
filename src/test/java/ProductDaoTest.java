@@ -3,6 +3,8 @@ import com.example.dao.imp.ProductDaoImp;
 import com.example.pojo.Product;
 import org.junit.Test;
 
+import java.util.List;
+
 public class ProductDaoTest {
 
     ProductDaoImp PD = new ProductDaoImp();
@@ -20,8 +22,8 @@ public class ProductDaoTest {
 
     @Test
     public void updateProduct() {
-        product.setSales(product.getSales()+1);
-        product.setStock(product.getStock()-1);
+        product.setSales(product.getSales() + 1);
+        product.setStock(product.getStock() - 1);
         product.setId(11);
         Object obj = PD.updateProduct(product);
         System.out.println(obj);
@@ -38,4 +40,18 @@ public class ProductDaoTest {
         Object obj = PD.queryProducts();
         System.out.println(obj);
     }
+
+    @Test
+    void queryForPageTotalCount() {
+        System.out.println(PD.queryForPageTotalCount());
+    }
+
+    @Test
+    void queryForItem() {
+        List<Product> items = PD.queryForItem(0, 5);
+        for (Product item : items) {
+            System.out.println(item);
+        }
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.pojo.Page;
 import com.example.pojo.Product;
 
 import java.util.List;
@@ -14,4 +15,6 @@ public interface ProductService {
     Product queryProductById(int id);
 
     List<Product> queryProduct();
+
+    Page<Product> page(int pageNo, int pageSize);
 }
