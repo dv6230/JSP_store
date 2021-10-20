@@ -11,7 +11,7 @@
             Bootstrap
         </a>
         <div class="d-inline-block">
-            <a class="nav-link  d-inline-block" href="<%=path%>manage/productServlet?action=list">後臺管理</a>
+            <a class="nav-link  d-inline-block" href="<%=path%>manage/productServlet?action=page">後臺管理</a>
             <a class="nav-link  d-inline-block" href="<%=path%>pages/user/login.jsp">登入</a>
         </div>
     </div>

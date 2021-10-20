@@ -35,4 +35,9 @@ public class ProductServiceImp implements ProductService {
     public List<Product> queryProduct() {
         return productDao.queryProducts();
     }
+
+    public List<Product> page(int pageNo,int pageSize){
+        return null;
+    }
+
 }

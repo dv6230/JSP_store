@@ -31,7 +31,7 @@
 <body>
 <jsp:include page="../../static/navbar.jsp"/>
 <div class="container mt-4">
-    <a href="<%=path%>pages/manager/book_edit.jsp" class="btn-primary d-inline-block btn">新增商品</a>
+    <a href="<%=path%>pages/manager/book_edit.jsp?method=add" class="btn-primary d-inline-block btn">新增商品</a>
     <div class="clearfix"></div>
     <table class="table table-striped mt-3">
         <thead>
@@ -53,7 +53,7 @@
                 <td>${item.sales}</td>
                 <td>${item.stock}</td>
                 <td class="">
-                    <a class="btn btn-primary d-inline" href="<%=path%>pages/manager/book_edit.jsp?action=getProduct&id=${item.id}">修改</a>
+                    <a class="btn btn-primary d-inline" href="<%=path%>manage/productServlet?action=getProduct&id=${item.id}&method=update">修改</a>
                     <a class="btn btn-primary d-inline deleteClass"
                        href="<%=path%>manage/productServlet?action=delete&id=${item.id}">刪除</a>
                 </td>

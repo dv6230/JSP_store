@@ -28,30 +28,32 @@
 %>
 <div class="container">
     <form action="<%=path%>manage/productServlet" method="POST" class="col-md-5 mt-5 mb-5">
-        <input hidden name="action" value="add">
+        <input hidden name="action" value="${param.method}">
+        <input hidden name="id" value="${requestScope.product.id}">
         <div class="mb-3">
             <label for="name" class="form-label">商品名稱</label>
-            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" value="${requestScope.product.name}">
         </div>
         <div class="mb-3">
             <label for="note" class="form-label">商品資訊</label>
-            <input type="text" class="form-control" id="note" name="note">
+            <input type="text" class="form-control" id="note" name="note" value="${requestScope.product.note}">
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">商品價格</label>
-            <input type="number" class="form-control" id="price" name="price">
+            <input type="number" class="form-control" id="price" name="price" value="${requestScope.product.price}">
         </div>
         <div class="mb-3">
             <label for="sales" class="form-label">商品銷售數量</label>
-            <input type="number" class="form-control" id="sales" name="sales">
+            <input type="number" class="form-control" id="sales" name="sales" value="${requestScope.product.sales}">
         </div>
         <div class="mb-3">
             <label for="stock" class="form-label">商品庫存</label>
-            <input type="number" class="form-control" id="stock" name="stock">
+            <input type="number" class="form-control" id="stock" name="stock" value="${requestScope.product.stock}">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
