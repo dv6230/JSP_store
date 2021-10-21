@@ -66,27 +66,41 @@
 
     <nav aria-label="Page navigation example border border-primary">
         <ul class="pagination justify-content-center">
-            <c:if test="${requestScope.page.pageNo > 1}">
-                <li class="page-item"><a class="page-link" href="?action=page&pageNo=1">首頁</a></li>
-                <li class="page-item" ${requestScope.page.pageNo-1 > 0 ? "" :"hidden"} >
-                    <a class="page-link"
-                       href="?action=page&pageNo=${requestScope.page.pageNo-1}">${requestScope.page.pageNo-1 > 0 ? requestScope.page.pageNo-1 :""}</a>
-                </li>
-            </c:if>
-            <li class="page-item active"><a class="page-link" href="#">${requestScope.page.pageNo}</a></li>
-            <c:if test="${requestScope.page.pageNo < requestScope.page.pageCount }">
-                <li class="page-item"  ${requestScope.page.pageNo+1 <= requestScope.page.pageCount ? "" :"hidden"}>
-                    <a class="page-link"
-                       href="?action=page&pageNo=${requestScope.page.pageNo+1}"> ${requestScope.page.pageNo+1 <= requestScope.page.pageCount ? requestScope.page.pageNo+1 :""}</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="?action=page&pageNo=${requestScope.page.pageCount}">末頁</a>
-                </li>
-            </c:if>
-            <small class="align-self-center">
-                總共${requestScope.page.pageCount}頁
-                總共${requestScope.page.dataTotalCount}筆資料
-            </small>
+
+            <c:choose>
+                <c:when test="${requestScope.page.pageCount <=5}">
+                    <c:set var="begin" value="${1}"></c:set>
+                    <c:set var="end" value="${requestScope.page.pageCount}"></c:set>
+                </c:when>
+                <c:when test="${requestScope.page.pageCount > 5}">
+                    <c:choose>
+                        <c:when test="${requestScope.page.pageNo <= 3}">
+                            <c:set var="begin" value="${1}"></c:set>
+                            <c:set var="end" value="${5}"></c:set>
+                        </c:when>
+                        <%--- 倒數後5頁 ---%>
+                        <c:when test="${requestScope.page.pageNo > requestScope.page.pageCount-3}">
+                            <c:set var="begin" value="${requestScope.page.pageCount-4}"></c:set>
+                            <c:set var="end" value="${requestScope.page.pageCount}"></c:set>
+                        </c:when>
+                        <c:otherwise>
+                            <c:set var="begin" value="${requestScope.page.pageNo-2}"></c:set>
+                            <c:set var="end" value="${requestScope.page.pageNo+2}"></c:set>
+                        </c:otherwise>
+                    </c:choose>
+                </c:when>
+            </c:choose>
+
+            <c:forEach begin="${begin}" end="${end}" var="i">
+                <c:if test="${i == requestScope.page.pageNo}">
+                    <li class="page-item active"><a class="page-link"
+                                                    href="?action=page&pageNo=${i}">${i}</a></li>
+                </c:if>
+                <c:if test="${i != requestScope.page.pageNo}">
+                    <li class="page-item"><a class="page-link" href="?action=page&pageNo=${i}">${i}</a>
+                    </li>
+                </c:if>
+            </c:forEach>
         </ul>
     </nav>
 </div>

@@ -40,7 +40,7 @@ public class ProductServiceImp implements ProductService {
     @Override
     public Page<Product> page(int pageNo, int pageSize) {
         Page<Product> page = new Page<Product>();
-        page.setPageNo(pageNo);
+
         page.setPageSize(pageSize);
         //總共有少筆資料
         Integer pageTotalCount = productDao.queryForPageTotalCount();
@@ -51,7 +51,12 @@ public class ProductServiceImp implements ProductService {
         }
         //設定總共有幾頁
         page.setPageCount(pageTotal);
+        if (pageNo > page.getPageCount()) {
+            pageNo = page.getPageCount();
+        }
+        page.setPageNo(pageNo);
         int begin = (page.getPageNo() - 1) * pageSize;
+
         List<Product> items = productDao.queryForItem(begin, pageSize);
         page.setItems(items);
         return page;

@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.List;
 
+import static com.example.pojo.Page.PAGE_SIZE;
 import static com.example.util.WebUtils.parserInt;
 
 @WebServlet(name = "productServlet", value = "/manage/productServlet")
@@ -25,7 +26,8 @@ public class ProductServlet extends BaseServlet {
         Product product = WebUtils.CopyParamToBean(request.getParameterMap(), new Product());
         productService.addProduct(product);
 //        request.getRequestDispatcher("/manage/productServlet?action=list").forward(request,response);
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page");
+        Page<Product> page = productService.page(0, PAGE_SIZE);
+        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page&pageNo=" + page.getPageCount());
     }
 
     void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -63,11 +65,11 @@ public class ProductServlet extends BaseServlet {
     }
 
     void page(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int pageNo = WebUtils.parserInt(request.getParameter("pageNo"),1);
-        int pageSize = WebUtils.parserInt(request.getParameter("pageSize"), Page.PAGE_SIZE);
-        Page<Product> productPage = productService.page(pageNo,pageSize);
-        request.setAttribute("page",productPage);
-        request.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(request,response);
+        int pageNo = WebUtils.parserInt(request.getParameter("pageNo"), 1);
+        int pageSize = WebUtils.parserInt(request.getParameter("pageSize"), PAGE_SIZE);
+        Page<Product> productPage = productService.page(pageNo, pageSize);
+        request.setAttribute("page", productPage);
+        request.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(request, response);
     }
 
 }

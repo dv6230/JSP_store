@@ -48,6 +48,9 @@ public class Page<T> {
     }
 
     public void setPageNo(Integer pageNo) {
+        if (pageNo < 1) {
+            pageNo = 1;
+        }
         this.pageNo = pageNo;
     }
 

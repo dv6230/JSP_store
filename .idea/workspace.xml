@@ -10,24 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/web/ClientProductsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/ProductDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/ProductDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pojo/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/imp/ProductServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/imp/ProductServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/WebUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductServiceImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/pojo/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/pojo/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/service/imp/ProductServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/service/imp/ProductServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/ProductDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/imp/ProductDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/imp/ProductDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pojo/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/pojo/Page.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/imp/ProductServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/service/imp/ProductServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" afterDir="false" />
     </list>
@@ -77,7 +75,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/pages/client" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -87,6 +85,9 @@
     <property name="project.structure.side.proportion" value="0.22923078" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\JSP_store\src\main\webapp\pages\client" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -98,17 +99,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.50" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -222,7 +212,10 @@
       <workItem from="1634548975616" duration="2145000" />
       <workItem from="1634624086135" duration="2650000" />
       <workItem from="1634628279229" duration="5182000" />
-      <workItem from="1634698250776" duration="6871000" />
+      <workItem from="1634698250776" duration="11764000" />
+      <workItem from="1634788038166" duration="1518000" />
+      <workItem from="1634789584267" duration="2813000" />
+      <workItem from="1634804030825" duration="8000" />
     </task>
     <servers />
   </component>
