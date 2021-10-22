@@ -57,7 +57,7 @@
                     <a class="btn btn-primary d-inline"
                        href="<%=path%>manage/productServlet?action=getProduct&id=${item.id}&method=update">修改</a>
                     <a class="btn btn-primary d-inline deleteClass"
-                       href="<%=path%>manage/productServlet?action=delete&id=${item.id}">刪除</a>
+                       href="<%=path%>manage/productServlet?action=delete&id=${item.id}&pageNo=${requestScope.page.pageNo}">刪除</a>
                 </td>
             </tr>
         </c:forEach>

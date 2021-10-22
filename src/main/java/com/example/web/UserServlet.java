@@ -10,12 +10,13 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
 
 @WebServlet(name = "UserServlet", value = "/UserServlet")
-public class UserServlet extends HttpServlet {
+public class UserServlet extends BaseServlet {
 
     private UserService userService = userService = new UserServiceImp();
 
@@ -29,6 +30,7 @@ public class UserServlet extends HttpServlet {
             req.setAttribute("username", username);
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         } else {
+            req.getSession().setAttribute("user", loginUser);
             req.getRequestDispatcher("/pages/user/login_success.jsp").forward(req, resp);
         }
     }
@@ -40,7 +42,7 @@ public class UserServlet extends HttpServlet {
             req.getRequestDispatcher("/pages/user/register.jsp").forward(req, resp);
         }
 
-        User user = (User) WebUtils.CopyParamToBean(req.getParameterMap(),new User());
+        User user = (User) WebUtils.CopyParamToBean(req.getParameterMap(), new User());
 
         String username = user.getUsername();
         String password = user.getPassword();
@@ -62,20 +64,10 @@ public class UserServlet extends HttpServlet {
         }
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
-        try {
-            Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
-            method.invoke(this, req, resp);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    protected void logout(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        req.getSession().invalidate();
+        resp.sendRedirect(req.getContextPath()+"/index.jsp");
     }
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
 }

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.UUID" %><%--
   Created by IntelliJ IDEA.
   User: allis
   Date: 2021/10/13
@@ -27,12 +27,17 @@
             request.getServerPort() + request.getContextPath() + "/";
 %>
 <div class="container">
+    <%
+        UUID uuid = UUID.randomUUID();
+        request.getSession().setAttribute("uuid",uuid);
+    %>
     <form action="<%=path%>manage/productServlet" method="POST" class="col-md-5 mt-5 mb-5">
         <input hidden name="action" value="${param.method}">
         <input hidden name="id" value="${requestScope.product.id}">
         <div class="mb-3">
             <label for="name" class="form-label">商品名稱</label>
-            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" value="${requestScope.product.name}">
+            <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp"
+                   value="${requestScope.product.name}" required>
         </div>
         <div class="mb-3">
             <label for="note" class="form-label">商品資訊</label>
@@ -40,7 +45,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">商品價格</label>
-            <input type="number" class="form-control" id="price" name="price" value="${requestScope.product.price}">
+            <input type="number" class="form-control" id="price" name="price" value="${requestScope.product.price}" required>
         </div>
         <div class="mb-3">
             <label for="sales" class="form-label">商品銷售數量</label>

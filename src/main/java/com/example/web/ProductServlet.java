@@ -34,7 +34,11 @@ public class ProductServlet extends BaseServlet {
         String request_id = request.getParameter("id").toString();
         int id = parserInt(request.getParameter("id").toString(), 0);
         productService.deleteProduct(id);
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page");
+        String pageNo = "";
+        if (request.getParameter("pageNo") != null) {
+            pageNo = "&pageNo="+request.getParameter("pageNo");
+        }
+        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page"+pageNo);
     }
 
     void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

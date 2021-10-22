@@ -20,7 +20,7 @@
 
 <body>
 
-<%@include file="../../static/navbar.jsp" %>
+<jsp:include page="/static/navbar.jsp"></jsp:include>
 
 <div class="container">
     <div class="col-md-6 col-sm-12">

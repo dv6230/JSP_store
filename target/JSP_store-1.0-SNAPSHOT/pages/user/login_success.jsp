@@ -24,7 +24,7 @@
     <title>登入成功</title>
 </head>
 <body>
-<%@include file="../../static/navbar.jsp" %>
+<jsp:include page="/static/navbar.jsp"></jsp:include>
 <div class="container">
     <div class="row text-center d-flex justify-content-center">
         <div class="col-sm-6">
