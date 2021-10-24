@@ -50,7 +50,7 @@ public class Cart {
         this.cartList = cartList;
     }
 
-    public Integer getTotalCount() {
+    public Integer getProductCount() {
         int totalCount = 0;
         for (Map.Entry<Integer, CartItem> entry : this.cartList.entrySet()) {
             totalCount += entry.getValue().getCount();

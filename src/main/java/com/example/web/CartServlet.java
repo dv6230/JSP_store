@@ -17,7 +17,6 @@ public class CartServlet extends BaseServlet {
     ProductService productService = new ProductServiceImp();
 
     void addItem(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        System.out.println("add to cart.");
         int id = Integer.valueOf(request.getParameter("productId"));
         Product product = productService.queryProductById(id);
         CartItem cartItem = new CartItem(product.getId(),product.getName(),1,product.getPrice(),product.getPrice());
@@ -27,7 +26,6 @@ public class CartServlet extends BaseServlet {
         }
         cart.addItem(cartItem);
         request.getSession().setAttribute("cart",cart);
-        System.out.println(cart.getTotalCount());
         response.sendRedirect(request.getContextPath());
     }
 }
