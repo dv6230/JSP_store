@@ -17,6 +17,7 @@
                 <a class="nav-link  d-inline-block" href="<%=path%>pages/user/register.jsp">註冊</a>
             </c:if>
             <c:if test="${not empty sessionScope.user}" >
+                <a class="nav-link  d-inline-block" href="<%=path%>pages/cart/cart.jsp">購物車</a>
                 <a class="nav-link  d-inline-block" href="<%=path%>manage/productServlet?action=page">後臺管理</a>
                 <a class="nav-link  d-inline-block" href="<%=path%>UserServlet?action=logout">登出</a>
             </c:if>

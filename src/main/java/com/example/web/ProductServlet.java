@@ -13,6 +13,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.List;
+import java.util.UUID;
 
 import static com.example.pojo.Page.PAGE_SIZE;
 import static com.example.util.WebUtils.parserInt;
@@ -23,11 +24,18 @@ public class ProductServlet extends BaseServlet {
     private ProductService productService = new ProductServiceImp();
 
     void add(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Product product = WebUtils.CopyParamToBean(request.getParameterMap(), new Product());
-        productService.addProduct(product);
+
+        UUID uuid = (UUID) request.getSession().getAttribute("uuid");
+        if (uuid != null) {
+            request.getSession().setAttribute("uuid", null);
+            Product product = WebUtils.CopyParamToBean(request.getParameterMap(), new Product());
+            productService.addProduct(product);
 //        request.getRequestDispatcher("/manage/productServlet?action=list").forward(request,response);
-        Page<Product> page = productService.page(0, PAGE_SIZE);
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page&pageNo=" + page.getPageCount());
+            Page<Product> page = productService.page(0, PAGE_SIZE);
+            response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page&pageNo=" + page.getPageCount());
+        } else {
+            response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page");
+        }
     }
 
     void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -36,9 +44,9 @@ public class ProductServlet extends BaseServlet {
         productService.deleteProduct(id);
         String pageNo = "";
         if (request.getParameter("pageNo") != null) {
-            pageNo = "&pageNo="+request.getParameter("pageNo");
+            pageNo = "&pageNo=" + request.getParameter("pageNo");
         }
-        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page"+pageNo);
+        response.sendRedirect(request.getContextPath() + "/manage/productServlet?action=page" + pageNo);
     }
 
     void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

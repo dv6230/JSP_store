@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <base href="<%=BasePath%>">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>首頁</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.note}</p>
-                    <a href="#" class="btn btn-primary">前往購買</a>
+                    <button class="btn btn-primary addToCart" productId="${product.id}">加入購物車</button>
                 </div>
             </div>
         </c:forEach>
@@ -75,6 +76,16 @@
     </nav>
 
 </div>
+
+<script>
+    $(function (){
+        $("button.addToCart").click(function (){
+            var productId = $(this).attr("productId");
+            location.href = "cartServlet?action=addItem&productId="+productId;
+        });
+    })
+
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"

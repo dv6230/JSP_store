@@ -12,27 +12,20 @@ public abstract class BaseServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        UUID uuid = (UUID) request.getSession().getAttribute("uuid");
-        if (uuid != null) {
-            request.getSession().removeAttribute("uuid");
-            request.setCharacterEncoding("UTF-8");
-            String action = request.getParameter("action");
-            try {
-                Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
-                method.invoke(this, request, response);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        } else {
-            response.sendRedirect(request.getContextPath()+"/manage/productServlet?action=page");
+        request.setCharacterEncoding("UTF-8");
+        String action = request.getParameter("action");
+        try {
+            Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);
+            method.invoke(this, request, response);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
 
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
         try {
             Method method = this.getClass().getDeclaredMethod(action, HttpServletRequest.class, HttpServletResponse.class);

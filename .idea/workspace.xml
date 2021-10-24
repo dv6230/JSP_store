@@ -10,30 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/web/CartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/cart/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pojo/CartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/BaseServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/login_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/login_success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/user/register_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/user/register_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/BaseServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/login_success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/register_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/user/register_success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/BaseServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/UserServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +80,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.18045977" />
     <property name="project.structure.side.proportion" value="0.22923078" />
+    <property name="service.view.auto.scroll.from.source" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -101,10 +93,75 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pojo" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
+    <configuration name="CartTest.addItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pojo" />
+      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
+      <option name="METHOD_NAME" value="addItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pojo" />
+      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
+      <option name="METHOD_NAME" value="clear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.deleteItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pojo" />
+      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
+      <option name="METHOD_NAME" value="deleteItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.updateCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JSP_store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pojo" />
+      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
+      <option name="METHOD_NAME" value="updateCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.50" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -193,6 +250,14 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CartTest.addItem" />
+        <item itemvalue="JUnit.CartTest.clear" />
+        <item itemvalue="JUnit.CartTest.updateCount" />
+        <item itemvalue="JUnit.CartTest.deleteItem" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -227,11 +292,22 @@
       <workItem from="1634830432695" duration="1885000" />
       <workItem from="1634871967851" duration="2593000" />
       <workItem from="1634874821967" duration="495000" />
+      <workItem from="1634875520206" duration="6087000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -256,16 +332,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
