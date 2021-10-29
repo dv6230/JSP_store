@@ -10,13 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UploadServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,19 +90,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductDaoTest.queryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSP_store" />
       <option name="PACKAGE_NAME" value="" />
@@ -275,6 +259,7 @@
       <workItem from="1635496495802" duration="10000" />
       <workItem from="1635496525840" duration="3288000" />
       <workItem from="1635500928265" duration="1241000" />
+      <workItem from="1635504234134" duration="961000" />
     </task>
     <servers />
   </component>

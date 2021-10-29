@@ -53,11 +53,6 @@ public class UploadServlet extends HttpServlet {
                 UUID imgUid = UUID.randomUUID();
                 for (FileItem fileItem : list) {
                     if (fileItem.isFormField()) {
-
-//                        System.out.println(fileItem.getFieldName());
-//                        System.out.println(fileItem.getString("UTF-8"));
-//                        System.out.println("");
-
                         switch (fileItem.getFieldName()) {
                             case "name":
                                 product.setName(fileItem.getString("UTF-8"));

@@ -29,9 +29,13 @@
 <div class="container">
     <%
         UUID uuid = UUID.randomUUID();
-        request.getSession().setAttribute("uuid",uuid);
+        request.getSession().setAttribute("uuid", uuid);
+        String update = path + "manage/productServlet";
+        String add = path + "manage/uploadServlet";
+        String url = request.getParameter("method").equals("add") ? add : update;
+        String enctype = request.getParameter("method").equals("add") ? "enctype=\"multipart/form-data\"" : "";
     %>
-    <form action="<%=path%>manage/uploadServlet" method="POST" class="col-md-5 mt-5 mb-5" enctype="multipart/form-data">
+    <form action="<%=url%>" method="POST" class="col-md-5 mt-5 mb-5" <%=enctype%>>
         <input hidden name="action" value="${param.method}">
         <input hidden name="id" value="${requestScope.product.id}">
         <div class="mb-3">
@@ -45,7 +49,8 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">商品價格</label>
-            <input type="number" class="form-control" id="price" name="price" value="${requestScope.product.price}" required>
+            <input type="number" class="form-control" id="price" name="price" value="${requestScope.product.price}"
+                   required>
         </div>
         <div class="mb-3">
             <label for="sales" class="form-label">商品銷售數量</label>
