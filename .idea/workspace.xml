@@ -10,14 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/OrderItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/OrderDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/OrderItemDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/ManagerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/TransactionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/imp/OrderServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/web/OrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/cart/checkout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OrderDaoImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OrderItemDaoImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OrderServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pojo/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/JDBCUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/cart/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/pojo/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/pojo/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/dao/imp/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/dao/imp/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/util/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/util/JDBCUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/CartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/cart/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pojo/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/pojo/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/util/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/util/JDBCUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/CartServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +53,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -66,11 +90,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaWeb2020IDEA新版资料-上硅谷/13-cookie和session/代码/book" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../slims01" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.18045977" />
     <property name="project.structure.side.proportion" value="0.22923078" />
@@ -87,70 +112,26 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="pojo" />
       <recent name="" />
+      <recent name="pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
-    <configuration name="CartTest.addItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.testUser.queryUserTest">
+    <configuration name="ProductDaoTest.queryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSP_store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pojo" />
-      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
-      <option name="METHOD_NAME" value="addItem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductDaoTest" />
+      <option name="METHOD_NAME" value="queryList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testUser.queryUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSP_store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pojo" />
-      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
-      <option name="METHOD_NAME" value="clear" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTest.deleteItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JSP_store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pojo" />
-      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
-      <option name="METHOD_NAME" value="deleteItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTest.updateCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JSP_store" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pojo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pojo" />
-      <option name="MAIN_CLASS_NAME" value="pojo.CartTest" />
-      <option name="METHOD_NAME" value="updateCount" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testUser" />
+      <option name="METHOD_NAME" value="queryUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,10 +227,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CartTest.addItem" />
-        <item itemvalue="JUnit.CartTest.clear" />
-        <item itemvalue="JUnit.CartTest.updateCount" />
-        <item itemvalue="JUnit.CartTest.deleteItem" />
+        <item itemvalue="JUnit.testUser.queryUserTest" />
+        <item itemvalue="JUnit.ProductDaoTest.queryList" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +267,19 @@
       <workItem from="1634874821967" duration="495000" />
       <workItem from="1634875520206" duration="6087000" />
       <workItem from="1635050844906" duration="4679000" />
-      <workItem from="1635061398599" duration="332000" />
+      <workItem from="1635061398599" duration="5880000" />
+      <workItem from="1635129233627" duration="4470000" />
+      <workItem from="1635137690736" duration="5450000" />
+      <workItem from="1635223699254" duration="8000" />
+      <workItem from="1635239663416" duration="641000" />
+      <workItem from="1635301800716" duration="2302000" />
+      <workItem from="1635308798305" duration="224000" />
+      <workItem from="1635325304694" duration="4537000" />
+      <workItem from="1635393430143" duration="1200000" />
+      <workItem from="1635424842324" duration="23000" />
+      <workItem from="1635426791882" duration="650000" />
+      <workItem from="1635427467355" duration="39000" />
+      <workItem from="1635438649555" duration="1456000" />
     </task>
     <servers />
   </component>

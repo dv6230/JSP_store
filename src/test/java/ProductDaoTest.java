@@ -1,7 +1,10 @@
 import com.example.dao.ProductDao;
 import com.example.dao.imp.ProductDaoImp;
 import com.example.pojo.Product;
+//import com.sun.tools.javac.code.Attribute;
+import com.example.pojo.User;
 import org.junit.Test;
+import org.junit.platform.commons.annotation.Testable;
 
 import java.util.List;
 
@@ -42,16 +45,16 @@ public class ProductDaoTest {
     }
 
     @Test
-    void queryForPageTotalCount() {
+    public void queryForPageTotalCount() {
         System.out.println(PD.queryForPageTotalCount());
     }
 
     @Test
-    void queryForItem() {
+    public void queryForItem() {
         List<Product> items = PD.queryForItem(0, 5);
         for (Product item : items) {
             System.out.println(item);
         }
     }
-
 }
+

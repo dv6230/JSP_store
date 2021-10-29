@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.List;
 
 public class testUser {
 
@@ -64,5 +65,12 @@ public class testUser {
         System.out.println(id);
     }
 
+    @org.junit.Test
+    public void queryUserTest() {
+        UserDaoImp userDaoImp = new UserDaoImp();
+        String sql = "SELECT id , username FROM t_user WHERE 1 = 1";
+        List<User> obj = userDaoImp.QueryForList(User.class, sql);
+        System.out.println(obj);
+    }
 
 }

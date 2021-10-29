@@ -19,10 +19,8 @@ public abstract class BaseDao {
             return queryRunner.update(connection, sql, args);
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtils.closeConnection(connection);
+            throw new RuntimeException(e);
         }
-        return -1;
     }
 
     public <T> T QueryForOne(Class<T> type, String sql, Object... args) {
@@ -31,10 +29,9 @@ public abstract class BaseDao {
             return queryRunner.query(connection, sql, new BeanHandler<T>(type), args);
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtils.closeConnection(connection);
+            throw new RuntimeException(e);
         }
-        return null;
+
     }
 
     public <T> List<T> QueryForList(Class<T> type, String sql, Object... args) {
@@ -43,10 +40,8 @@ public abstract class BaseDao {
             return queryRunner.query(connection, sql, new BeanListHandler<>(type), args);
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            JDBCUtils.closeConnection(connection);
+            throw new RuntimeException(e);
         }
-        return null;
     }
 
     public Object QueryForSingleValue(String sql, Object... args) {
@@ -55,8 +50,8 @@ public abstract class BaseDao {
             return queryRunner.query(connection, sql, new ScalarHandler<>(), args);
         } catch (Exception e) {
             e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return null;
     }
 
 }
