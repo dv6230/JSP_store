@@ -31,7 +31,7 @@
         UUID uuid = UUID.randomUUID();
         request.getSession().setAttribute("uuid",uuid);
     %>
-    <form action="<%=path%>manage/productServlet" method="POST" class="col-md-5 mt-5 mb-5">
+    <form action="<%=path%>manage/uploadServlet" method="POST" class="col-md-5 mt-5 mb-5" enctype="multipart/form-data">
         <input hidden name="action" value="${param.method}">
         <input hidden name="id" value="${requestScope.product.id}">
         <div class="mb-3">
