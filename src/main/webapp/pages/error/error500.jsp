@@ -6,6 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String path = request.getScheme() + "://" +
+            request.getServerName() + ":" +
+            request.getServerPort() + request.getContextPath() + "/";
+%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,8 +24,8 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>後台錯誤</h1>
-<a href="../../index.jsp">返回首頁</a>
+<h1>錯誤</h1>
+<a href="<%=path%>index.jsp">返回首頁</a>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

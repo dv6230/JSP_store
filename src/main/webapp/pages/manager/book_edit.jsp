@@ -55,7 +55,11 @@
             <label for="stock" class="form-label">商品庫存</label>
             <input type="number" class="form-control" id="stock" name="stock" value="${requestScope.product.stock}">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02" name="file">
+            <label class="input-group-text" for="inputGroupFile02">上傳</label>
+        </div>
+        <button type="submit" class="btn btn-primary">送出</button>
     </form>
 </div>
 

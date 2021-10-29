@@ -20,6 +20,7 @@ public class TransactionFilter implements Filter {
         } catch (Exception e) {
             e.printStackTrace();
             JDBCUtils.rollbackAndClose();
+            throw new RuntimeException(e);
         }
 
     }

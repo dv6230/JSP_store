@@ -24,7 +24,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<h1>錯誤</h1>
+<h1>頁面不存在</h1>
 <a href="<%=path%>index.jsp">返回首頁</a>
 <!-- Optional JavaScript; choose one of the two! -->
 

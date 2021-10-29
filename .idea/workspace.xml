@@ -10,9 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/gson-2.8.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/error/error404.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/OrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/OrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSP_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JSP_store.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filter/TransactionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/TransactionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/error/error500.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/error/error500.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/filter/TransactionFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/filter/TransactionFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/ProductServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/error/error500.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/error/error500.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/filter/TransactionFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/filter/TransactionFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/ProductServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +36,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -60,7 +72,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../slims01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -73,6 +85,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\JSP_store\src\main\webapp\WEB-INF\lib" />
+      <recent name="D:\Java\JSP_store\src\main\webapp\pages\error" />
       <recent name="D:\Java\JSP_store\src\main\webapp\pages\client" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -87,19 +101,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductDaoTest.queryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSP_store" />
       <option name="PACKAGE_NAME" value="" />
@@ -263,7 +264,11 @@
       <workItem from="1635426791882" duration="650000" />
       <workItem from="1635427467355" duration="39000" />
       <workItem from="1635438649555" duration="1456000" />
-      <workItem from="1635489677950" duration="303000" />
+      <workItem from="1635489677950" duration="1555000" />
+      <workItem from="1635493087577" duration="408000" />
+      <workItem from="1635495581861" duration="891000" />
+      <workItem from="1635496495802" duration="10000" />
+      <workItem from="1635496525840" duration="1978000" />
     </task>
     <servers />
   </component>
@@ -303,6 +308,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/web/ProductServlet.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
