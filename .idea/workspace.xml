@@ -10,39 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/OrderItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/OrderDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/OrderItemDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/ManagerFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/TransactionFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/imp/OrderServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/web/OrderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/cart/checkout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OrderDaoImpTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OrderItemDaoImpTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OrderServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/imp/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/CartServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/cart/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/dao/imp/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/dao/imp/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/util/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/util/JDBCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/CartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/OrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/OrderServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/cart/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/static/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/dao/imp/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/util/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/util/JDBCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/CartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/CartServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +86,20 @@
       <recent name="pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testUser.queryUserTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.50">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductDaoTest.queryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JSP_store" />
       <option name="PACKAGE_NAME" value="" />
@@ -280,6 +263,7 @@
       <workItem from="1635426791882" duration="650000" />
       <workItem from="1635427467355" duration="39000" />
       <workItem from="1635438649555" duration="1456000" />
+      <workItem from="1635489677950" duration="303000" />
     </task>
     <servers />
   </component>
