@@ -26,7 +26,15 @@
     <div class="row mt-5">
         <c:forEach var="product" items="${requestScope.page.items}">
             <div class="card col-md-3">
-                <img class="card-img-top" src="https://picsum.photos/250" alt="Card image cap">
+                <%
+                    String imgBaseUrl = BasePath + "img_file/";
+                %>
+                <c:if test="${empty product.imgPath}">
+                    <img class="card-img-top" src="https://picsum.photos/250/250" alt="Card image cap">
+                </c:if>
+                <c:if test="${not empty product.imgPath}">
+                    <img class="card-img-top" src="/JSP_store_war_exploded/img_file/${product.imgPath}" alt="Card image cap">
+                </c:if>
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.note}</p>
@@ -78,10 +86,10 @@
 </div>
 
 <script>
-    $(function (){
-        $("button.addToCart").click(function (){
+    $(function () {
+        $("button.addToCart").click(function () {
             var productId = $(this).attr("productId");
-            location.href = "cartServlet?action=addItem&productId="+productId;
+            location.href = "cartServlet?action=addItem&productId=" + productId;
         });
     })
 

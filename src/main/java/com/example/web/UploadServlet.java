@@ -71,13 +71,16 @@ public class UploadServlet extends HttpServlet {
                                 break;
                         }
                     } else {
-                        String file = fileItem.getName();
-                        String fileName = fileItem.getName().substring(file.indexOf("."), file.length());
-                        try {
-                            fileItem.write(new File("D:\\Java\\JSP_store\\src\\main\\webapp\\img_file\\" + imgUid.toString() + fileName));
-                            product.setimgPath(imgUid.toString() + fileName);
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                        if(fileItem.getName() != null){
+                            String file = fileItem.getName();
+                            String fileName = fileItem.getName().substring(file.indexOf("."), file.length());
+                            try {
+                                fileItem.write(new File("D:\\Java\\JSP_store\\src\\main\\webapp\\img_file\\" + imgUid.toString() + fileName));
+//                                fileItem.write(new File("/img_file/" + imgUid.toString() + fileName));
+                                product.setimgPath(imgUid.toString() + fileName);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }

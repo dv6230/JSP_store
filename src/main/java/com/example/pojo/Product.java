@@ -8,7 +8,7 @@ public class Product {
     private Integer price;
     private Integer sales;
     private Integer stock;
-    private String imgPath = "https://picsum.photos/200/300";
+    private String imgPath = "";
 
     public Product(Integer id, String name, String note, Integer price, Integer sales, Integer stock, String imgPath) {
         this.id = id;

@@ -11,9 +11,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d21c0d4f-8673-4910-99c6-c7e5521beb3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pojo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pojo/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/web/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/UploadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/manager/book_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/manager/book_edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/client/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/pojo/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/pojo/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/WEB-INF/classes/com/example/web/UploadServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/img_file/07bcc6bb-a85e-4b30-a781-d8cc42049137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/img_file/179d409d-db10-483b-bcd4-2ab15e797ad6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/JSP_store-1.0-SNAPSHOT/pages/client/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pojo/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/pojo/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/BaseServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/web/UploadServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/web/UploadServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,6 +269,10 @@
       <workItem from="1635496525840" duration="3288000" />
       <workItem from="1635500928265" duration="1241000" />
       <workItem from="1635504234134" duration="961000" />
+      <workItem from="1635653817634" duration="1970000" />
+      <workItem from="1635656150904" duration="1732000" />
+      <workItem from="1635661442396" duration="44000" />
+      <workItem from="1635925493443" duration="9000" />
     </task>
     <servers />
   </component>
